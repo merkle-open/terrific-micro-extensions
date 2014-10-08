@@ -23,7 +23,7 @@ You need:
 
 Include the spriter main file into your project (file: `project/index.project.php`)
 
-    require_once(dirname(__FILE__) . '/extensions/php-spriter/spriter.inc.php');
+    require_once(__DIR__ . '/extensions/php-spriter/spriter.inc.php');
 
 ... configure
 

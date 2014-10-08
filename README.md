@@ -9,3 +9,8 @@ Use these extensions at your own risk ;-)
 
 [png Sprite generator](php-spriter/README.md)
 
+## Template Engines
+
+### Terrific Micro Twig
+
+[Twig template rendering engine](terrific-micro-twig/README.md)

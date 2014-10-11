@@ -3,6 +3,12 @@
 A collection of some extensions for [Terrific Micro](https://github.com/namics/terrific-micro).
 Use these extensions at your own risk ;-)
 
+## Lorem Generators
+
+### Lorem Ipsum Generator
+
+Simple [lorem text & markup generator](Lorem-Ipsum-Generator/README.md)
+
 ## Sprite Generators
 
 ### PHP Spriter

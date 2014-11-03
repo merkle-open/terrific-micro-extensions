@@ -28,14 +28,17 @@ Include the spriter main file into your project (file: `project/index.project.ph
 ... configure
 
     $spriterConf = array(
-        "iconDirectory" => BASE . "project/resources/sprite/icon-sprite",      // directory, which contains your single icon files
-        "cssDirectory" => "assets/css",                                        // where you want the sprite CSS to be saved. This folder has to be writable by your webserver.
-        "spriteDirectory" => "assets/img",                                     // where you want the sprite image file to be saved. Folder has to be writable, too.
-        "spriteFilename" => "icon-sprite",                                     // the name of the generated CSS and PNG file
+        "srcDirectory" => BASE . "project/resources/sprite/icon-sprite",       // folder that contains the source pictures for the sprite
+        "cssDirectory" => BASE . "assets/css",                                 // folder where you want the sprite image file to be saved (folder has to be writable by your webserver)
+        "spriteDirectory" => BASE . "assets/img/sprite",                       // folder where you want the sprite CSS to be saved (folder has to be writable, too)
+        
+        "spriteFilepath" => "assets/img/sprite",                               // path to the sprite image for CSS rule
+        "spriteFilename" => "icon-sprite",                                     // name of the generated CSS and PNG file
+        
         "retina" => array(2, 1),                                               // defines the desired retina dimensions, you want
-        "retinaDelimiter" => "@",                                              // the delimiter inside the sprite image filename
-        "cssFileExtension" => "css",                                           // the CSS file extension
-        "namespace" => "icon-",                                                // the namespace for your icon CSS classes
+        "retinaDelimiter" => "@",                                              // delimiter inside the sprite image filename
+        "cssFileExtension" => "css",                                           // CSS file extension
+        "namespace" => "icon-",                                                // namespace for your icon CSS classes
         "ignoreHover" => false,                                                // set to true if you don't need hover icons
         "hoverSuffix" => "-hover"                                              // the name suffix for hovered icons.
     );

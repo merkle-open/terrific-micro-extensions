@@ -10,4 +10,3 @@ Hosted on: [GitHub](http://namics.github.io/terrific-micro-twig)
 ## Installation & more
 
 on [GitHub](http://namics.github.io/terrific-micro-twig)
-

@@ -18,6 +18,7 @@ You need:
 
         cd project/extensions
         git clone https://github.com/namics/php-spriter.git
+        rm -rf php-spriter/.git
 
 ## Usage
 

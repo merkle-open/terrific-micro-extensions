@@ -20,3 +20,9 @@ Simple [lorem text & markup generator](Lorem-Ipsum-Generator/README.md)
 ### Terrific Micro Twig
 
 [Twig template rendering engine](terrific-micro-twig/README.md)
+
+## Deployment / Export
+
+### Grunt Terrific Micro Exporter
+
+[Grunt Exporter](grunt-terrific-micro-exporter/README.md)

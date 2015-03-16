@@ -30,18 +30,29 @@ Include the spriter main file into your project (file: `project/index.project.ph
 
     $spriterConf = array(
         "srcDirectory" => BASE . "project/resources/sprite/icon-sprite",       // folder that contains the source pictures for the sprite
-        "cssDirectory" => BASE . "assets/css",                                 // folder where you want the sprite image file to be saved (folder has to be writable by your webserver)
         "spriteDirectory" => BASE . "assets/img/sprite",                       // folder where you want the sprite CSS to be saved (folder has to be writable, too)
         
         "spriteFilepath" => "assets/img/sprite",                               // path to the sprite image for CSS rule
-        "spriteFilename" => "icon-sprite",                                     // name of the generated CSS and PNG file
+        "spriteFilename" => "icon-sprite",                                     // name of the generated CSS and PNG file.
         
-        "retina" => array(2, 1),                                               // defines the desired retina dimensions, you want
-        "retinaDelimiter" => "@",                                              // delimiter inside the sprite image filename
-        "cssFileExtension" => "css",                                           // CSS file extension
+        "retina" => array(2, 1),                                               // defines the desired retina dimensions, you want.
+        "retinaDelimiter" => "@",                                              // delimiter inside the sprite image filename.
         "namespace" => "icon-",                                                // namespace for your icon CSS classes
+        
         "ignoreHover" => false,                                                // set to true if you don't need hover icons
-        "hoverSuffix" => "-hover"                                              // the name suffix for hovered icons.
+        "hoverSuffix" => "-hover",                                             // set to any suffix you want.
+        
+        "targets" => array(
+            // you can define multiple targets that will all reference the same png sprite
+            array(
+                "cssDirectory" =>  BASE . "assets/css",                        // folder where you want the sprite CSS to be saved (folder has to be writable, too)
+                "cssFilename" => "icon-sprite.less",                           // your CSS/Less/Sass target file
+                //"globalTemplate" => "...",                                   // global template, which contains general CSS styles for all icons (remove line for default)
+                //"eachTemplate" => "...",                                     // template for each CSS icon class (remove line for default)
+                //"eachHoverTemplate" => "...",                                // template for each CSS icon hover class (remove line for default)
+                //"ratioTemplate" => "..."                                     // template for each retina media query (remove line for default)
+            )
+        )
     );
 
 ... and start

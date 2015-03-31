@@ -29,12 +29,15 @@ Include the spriter main file into your project (file: `project/index.project.ph
 ... configure
 
     $spriterConf = array(
+        "forceGenerate" => false,                                              // set to true if you want to force the CSS and sprite generation.
+    
         "srcDirectory" => BASE . "project/resources/sprite/icon-sprite",       // folder that contains the source pictures for the sprite
         "spriteDirectory" => BASE . "assets/img/sprite",                       // folder where you want the sprite CSS to be saved (folder has to be writable, too)
         
         "spriteFilepath" => "assets/img/sprite",                               // path to the sprite image for CSS rule
         "spriteFilename" => "icon-sprite",                                     // name of the generated CSS and PNG file.
         
+        "tileMargin" => 4,                                                     // margin in px between tiles in the highest 'retina' dimension (default is 0) - if you generate different 'retina' dimensions, take a common multiple of the selected variants.
         "retina" => array(2, 1),                                               // defines the desired retina dimensions, you want.
         "retinaDelimiter" => "@",                                              // delimiter inside the sprite image filename.
         "namespace" => "icon-",                                                // namespace for your icon CSS classes
